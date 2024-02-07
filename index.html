@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Careers</title>
+</head>
+<body>
+    <header>
+        <h1>Careers</h1>
+        <input type="text" id="search-bar" placeholder="Search jobs...">
+    </header>
+
+    <section id="job-container">
+
+    </section>
+
+    <section id="subscription-section">
+        <h2>Sign Up For Job Alerts</h2>
+        <form id="subscription-form" onsubmit="handleSubscription(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+    
+            <label>
+                <input type="checkbox" id="checkbox" required> I agree to the terms of service and privacy policy.
+            </label>
+    
+            <button type="submit">Subscribe</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
